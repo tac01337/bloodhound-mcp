@@ -117,7 +117,7 @@ async def find_shortest_path(params: PathRequest, ctx: Context) -> Dict[str, Any
         }
 
 @mcp.tool()
-async def search_entities(search_term: str, entity_type: Optional[str] = None, ctx: Context) -> List[Dict[str, Any]]:
+async def search_entities(search_term: str, ctx: Context, entity_type: Optional[str] = None) -> List[Dict[str, Any]]:
     """
     Search for entities in BloodHound by name or partial name.
     
