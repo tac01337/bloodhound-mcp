@@ -24,11 +24,22 @@ Bloodhound-MCP is a server implementation for Bloodhound's API. It provides a ba
    ```bash
    pip install -r requirements.txt
    ```
+4. Run with FastMCP:
+    ```bash
+    fastmcp run bloodhound_server.py
+    ```
+
+
+## Testing
+1. Test with MCP inspector using FastMCP
+    ```bash
+    fastmcp dev bloodhound_server.py
+    ```
 
 ## Usage
 Run the server using the following command:
 ```bash
-python bloodhound_server.py
+uv run --with fastmcp fastmcp run bloodhound_server.py
 ```
 
 ## Contributing
